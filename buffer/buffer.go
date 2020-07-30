@@ -18,6 +18,7 @@ func main() {
 	go rotina(canal)
 	//lendo o buffer
 	fmt.Println(<-canal)
+	//nesse caso ele conseguirá ler até o quarto elemento por que funcao print irá liberar um espaco após a leitura do primeiro elemento
 }
 
 //como o buffer possui 3 posicoes ele ficará bloqueado até que se cosuma o dado de uma das posicoes p/ assim um novo dado ser inserido
